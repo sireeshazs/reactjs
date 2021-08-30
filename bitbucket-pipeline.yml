@@ -4,4 +4,4 @@ pipelines:
     - step:
         script:
           - npm install
-          - npm start
+          - npm run build
