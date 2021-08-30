@@ -14,12 +14,4 @@ pipelines:
               - node
             script:
               - npm install
-              
-   - pipe: atlassian/aws-ecr-push-image:1.4.2
-  variables:
-    AWS_ACCESS_KEY_ID: 'AKIAWSI2LMR4JTWND3LQ' # Optional if already defined in the context.
-    AWS_SECRET_ACCESS_KEY: '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' # Optional if already defined in the context.
-    AWS_DEFAULT_REGION: 'us-east-1' # Optional if already defined in the context.
-    IMAGE_NAME: "reactjs"
-    # TAGS: "<string>" # Optional
-    # DEBUG: "<boolean>" # Optional
+              - npm start
