@@ -1,0 +1,7 @@
+  
+@Library('todo') _
+
+docker (
+        COMPONENT             : 'reactjs',
+        PROJECT_NAME          : "todo",
+)
